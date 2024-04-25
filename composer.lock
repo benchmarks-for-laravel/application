@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e53580f803ce5982a9f27200f011a18",
+    "content-hash": "a9f0e738566598a24a83989e25db9b0c",
     "packages": [
         {
             "name": "benchmarks-for-laravel/toolbox",
@@ -15,6 +15,7 @@
                 "reference": "32300291d6c034c09bbf455b9d2d306f7589a11f"
             },
             "require": {
+                "illuminate/console": "^9.0|^10.0|^11.0",
                 "illuminate/container": "^9.0|^10.0|^11.0",
                 "illuminate/contracts": "^9.0|^10.0|^11.0",
                 "illuminate/support": "^9.0|^10.0|^11.0",
@@ -54,6 +55,57 @@
             ],
             "description": "A set of helpers with which to build and run benchmarks",
             "homepage": "https://github.com/benchmarks-for-laravel/toolbox",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "benchmarks-for-laravel/views",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../benchmarks-for-laravel-views",
+                "reference": "32300291d6c034c09bbf455b9d2d306f7589a11f"
+            },
+            "require": {
+                "benchmarks-for-laravel/toolbox": "*",
+                "illuminate/console": "^9.0|^10.0|^11.0",
+                "illuminate/container": "^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BenchmarksForLaravel\\Views\\ViewsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BenchmarksForLaravel\\Views\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BenchmarksForLaravel\\Views\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "me@assertchris.io",
+                    "homepage": "https://assertchris.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Benchmarks for Laravel's view engine",
+            "homepage": "https://github.com/benchmarks-for-laravel/views",
             "transport-options": {
                 "relative": true
             }

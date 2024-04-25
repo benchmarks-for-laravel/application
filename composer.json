@@ -7,13 +7,18 @@
         {
             "type": "path",
             "url": "../benchmarks-for-laravel-toolbox"
+        },
+        {
+            "type": "path",
+            "url": "../benchmarks-for-laravel-views"
         }
     ],
     "require": {
         "php": "^8.3",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "benchmarks-for-laravel/toolbox": "*"
+        "benchmarks-for-laravel/toolbox": "*",
+        "benchmarks-for-laravel/views": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
