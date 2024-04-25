@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da9b7a1dc1dd923105198c572cc7df8d",
+    "content-hash": "1e53580f803ce5982a9f27200f011a18",
     "packages": [
+        {
+            "name": "benchmarks-for-laravel/toolbox",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../benchmarks-for-laravel-toolbox",
+                "reference": "32300291d6c034c09bbf455b9d2d306f7589a11f"
+            },
+            "require": {
+                "illuminate/container": "^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BenchmarksForLaravel\\Toolbox\\ToolboxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BenchmarksForLaravel\\Toolbox\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BenchmarksForLaravel\\Toolbox\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "me@assertchris.io",
+                    "homepage": "https://assertchris.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A set of helpers with which to build and run benchmarks",
+            "homepage": "https://github.com/benchmarks-for-laravel/toolbox",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -8133,12 +8185,12 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.3"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"

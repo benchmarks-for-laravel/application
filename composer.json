@@ -1,13 +1,19 @@
 {
-    "name": "laravel/laravel",
+    "name": "benchmarks-for-laravel/application",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "A nice interface through which to run benchmarks",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../benchmarks-for-laravel-toolbox"
+        }
+    ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "benchmarks-for-laravel/toolbox": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -61,6 +67,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
