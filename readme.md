@@ -15,4 +15,4 @@ composer install
 php artisan benchmarks-for-laravel:run-benchmark
 ```
 
-![Demo](https://github.com/benchmarks-for-laravel/application/blob/3318d449cc7046757eb5da3b9898885cf51e30a1/demo.gif)
+![Demo](https://github.com/benchmarks-for-laravel/application/blob/cdc03baaef0f123439ae16153b8681c19488d52b/demo.gif)
